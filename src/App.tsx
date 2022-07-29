@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import Clients from './components/Clients';
+import AddClientModal from './components/AddClientModal';
 
 const cache = new InMemoryCache({
   typePolicies: {
@@ -30,6 +31,7 @@ const App: FC = () => {
   return (
     <div className="px-8 mx-auto max-w-screen-lg">
       <ApolloProvider client={client}>
+        <AddClientModal />
         <Clients />
       </ApolloProvider>
     </div>

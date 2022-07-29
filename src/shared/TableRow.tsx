@@ -1,7 +1,7 @@
 import { useMutation } from '@apollo/client';
 import { FC } from 'react';
 import DeleteIcon from '../icons/DeleteIcon';
-import { DELETE_CLIENT } from '../queries/ClientMutation';
+import { DELETE_CLIENT } from '../mutation/ClientMutation';
 import { GET_CLIENTS } from '../queries/ClientQueries';
 
 interface ClientProps {
